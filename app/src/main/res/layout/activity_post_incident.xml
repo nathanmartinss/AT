@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jomhuria"
+            android:gravity="center_horizontal"
+            android:text="Accident Track"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerIncidentType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/checkBoxVictims"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Possui vítimas?" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Localização:" />
+
+        <TextView
+            android:id="@+id/tvDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Horário" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E00A0A"
+                android:text="Localização" />
+
+            <Button
+                android:id="@+id/btnUploadPhoto"
+                android:layout_width="201dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E00000"
+                android:text="Foto do Incidente" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmitIncident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#E00000"
+            android:text="Postar" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

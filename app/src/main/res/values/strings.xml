@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Accident Track</string>
+    <string name="choose_incident_type">Escolha o Tipo de Incidente</string>
+    <string-array name="incident_types">
+        <item>Queimada</item>
+        <item>Enchente</item>
+        <item>Furacão</item>
+        <item>Desabamento</item>
+    </string-array>
+</resources>
